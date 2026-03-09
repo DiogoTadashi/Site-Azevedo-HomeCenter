@@ -1,10 +1,28 @@
 @charset "UTF-8";
 
+:root{
+    --cor0: #038C33;
+    --cor1: #02732A;
+    --cor2: #D97218;
+    --cor3: #D95F18;
+    --cor4: #E87814;
+    --cor5: #063d1e;
+    --cor6: #DCA677;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-header: "cooper-black-std", "Noto Serif", serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    min-width: 100%;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     display: flex;
@@ -15,15 +33,16 @@ header {
     z-index: 1000;
 }
 
-.logo { 
+header > .logo { 
     height: auto; 
-    max-height: 80px; 
+    max-height: 90px; 
     width: auto; 
-    max-width: 20%;
+    min-width: 30px;
 }
 
 header > h1 {
     text-align: center;
+    font-family: var(--fonte-header);
     width: 100%;
     margin: 0;
     color: rgb(0, 0, 0);
@@ -43,20 +62,20 @@ nav.social ul {
   display: flex;
 }
 
-.social { 
+nav.social { 
     display: flex;
     align-items: center; 
     gap: 50px;
     margin-right: 50px;
 } 
 
-.social a {
+nav.social a {
     display: inline-block;
     text-decoration: none; 
     line-height: 0;
 }
 
-.social img {
+nav.social img {
     height: 35px;
     cursor: pointer;
 }
@@ -84,11 +103,11 @@ main {
 .carrossel {
     position: relative;
     width: 100%;
-    max-width: 640px;
+    max-width: 480px;
     margin: 20px auto;
     overflow: hidden;
     height: 100%;
-    max-height: 640px;
+    max-height: 480px;
 }
 
 .slides {
@@ -175,6 +194,11 @@ footer {
   text-align: center;        
 }
 
+footer a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .localizacao {
   display: flex;
   align-items: flex-start;
@@ -185,6 +209,14 @@ footer {
 
 .localizacao img {
   height: 25px;
+}
+
+.localizacao a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer-copy {
