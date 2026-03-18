@@ -138,42 +138,95 @@ input[type="radio"] { display: none; }
 #slide3:checked ~ .slides { margin-left: -200%; }
 #slide4:checked ~ .slides { margin-left: -300%; }
 
-.navegacao {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.navegacao label {
-  display: inline-block;
-  width: 12px; height: 12px;
-  background: #ccc; border-radius: 50%;
-  margin: 0 6px; cursor: pointer;
-}
-
-
-
-
-.faixa {
+section {
   padding: 60px 20px;
   text-align: center;
 }
 
-.faixa1 {
+section.servicos {
   background-color: #038c33;
   color: white;
-  padding: 60px 20px;
 }
 
-.faixa2 {
+.cards-container {
+  display: flex;        /* card em linha*/
+  gap: 20px;            /* espaço entre*/
+  justify-content: center;
+  color: black;
+}
+
+.card {
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 24px;
+  width: 300px;
+  text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    display: block;
+}
+
+section.marcas {
+    background-color: var(--cor5);
+    color: black;
+}
+
+.marcas-row {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.marca-pill {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    min-width: 100px;
+}
+
+.marca-pill img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.marca-pill span {
+    font-size: 13px;
+    color: #555;
+}
+
+section.sobre-nos {
   background-color: #d97218;
   color: white;
-  padding: 60px 20px;
 }
 
-.faixa3 {
+.sobre-nos h2{
+    padding-bottom: 20px;
+}
+
+.sobre-nos p {
+    margin-bottom: 16px;
+    line-height: 1.7;
+    text-align: justify;
+    margin-left: 125px;
+    margin-right: 125px;
+}
+
+section.contato {
   background-color: #e87814;
   color: white;
-  padding: 60px 20px;
 }
 
 

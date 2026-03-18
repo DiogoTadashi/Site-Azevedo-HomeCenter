@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Azevedo HomeCenter - Materiais de construção em Jales desde 1994. Qualidade, variedade e atendimento diferenciado.">
-    <title>Azevedo HomeCenter</title>
+    <title>Azevedo HomeCenter | Materiais de Construção em Jales</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/images.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,26 +13,34 @@
     <link rel="stylesheet" href="https://use.typekit.net/lxt8izq.css">
 </head>
 <body>
-    <header>
+    <header class="animacao-escondida">
         <img src="img/AzevedoLogo.jpg" alt="Logo da empresa" class="logo">
-        <h1 class="animacao-escondida">Azevedo HomeCenter</h1>
+        <h1>Azevedo HomeCenter</h1>
 
         <nav class="social" aria-label="Redes sociais">
             <ul>
-                <li><a href="https://www.instagram.com/azevedohomecenter" target="_blank" rel="noopener">
-                <img src="img/instagram-94.png" alt="Instagram">
-                </a></li>
-                </li><a href="https://wa.me/5517981325693" target="_blank" rel="noopener">
+                <li>
+                    <a href="https://www.instagram.com/azevedohomecenter" target="_blank" rel="noopener">
+                    <img src="img/instagram-94.png" alt="Instagram">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://wa.me/5517981325693" target="_blank" rel="noopener">
                     <img src="img/whatsapp-256.png" alt="WhatsApp">
-                </a></li>
-                </li><a href="https://www.facebook.com/AzevedoJales" target="_blank" rel="noopener">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.facebook.com/AzevedoJales" target="_blank" rel="noopener">
                     <img src="img/facebook.png" alt="Facebook">
-                </a></li>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="animacao-escondida">
 
         <div class="carrossel">
             <input type="radio" name="slide" id="slide1" checked>
@@ -46,25 +54,83 @@
                 <div class="slide"><img src="img/imagem3.jpg" alt="EXEMPLO DE IMAGEM"></div>
                 <div class="slide"><img src="img/imagem4.jpg" alt="IMAGEM EXEMPLO"></div>
             </div>
-
-            <div class="navegacao">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
-            </div>
         </div>
 
 
 
-        <section class="faixa faixa1 animacao-escondida">
+        <section class="servicos">
             <h2>Serviços</h2>
+
             <p>Lista dos serviços oferecidos...</p>
+
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim aut voluptate illum omnis labore dolorem eius facere fugit, culpa maiores excepturi quasi, soluta aliquid consequatur ut eligendi quaerat! Reprehenderit?</p>
+
+            <div class="cards-container">
+
+                <div class="card">
+                    <img src="#" alt="Imagem ilustrando rápidas entregas">
+                    <h3>Entrega Rápida</h3>
+                    <p>Entregamos em toda a cidade no mesmo dia.</p>
+                </div>
+
+                <div class="card">
+                    <img src="#" alt="Imagem ilustrando materias de qualidade">
+                    <h3>Materiais de Qualidade</h3>
+                    <p>Trabalhamos com as melhores marcas do mercado.</p>
+                </div>
+
+                <div class="card">
+                    <img src="#" alt="Imagem ilustrando atendimentos especializados">
+                    <h3>Atendimento Especializado</h3>
+                    <p>Nossa equipe te ajuda a escolher o material certo.</p>
+                </div>
+
+            </div>
         </section>
 
-        <section class="faixa faixa2 animacao-escondida">
+        <section class="marcas">
+            <h2>Marcas que trabalhamos</h2>
+            <p>Parceiros selecionados para garantir qualidade na sua obra<p>
+            <div class="marcas-row">
+                <div class="marca-pill">
+                    <div class="marca-pill-inner">
+                        <div class="marca-logo-placeholder">
+                        </div>
+                        <div class="marca-nome">Villagres</div>
+                    </div>
+                </div>
+                <div class="marca-pill">
+                    <div class="marca-pill-inner">
+                        <div class="marca-logo-placeholder"></div>
+                        <div class="marca-nome">Roca</div>
+                    </div>
+                </div>
+                <div class="marca-pill">
+                    <div class="marca-pill-inner">
+                        <div class="marca-logo-placeholder"></div><div class="marca-nome">Tigre</div>
+                    </div>
+                </div>
+                <div class="marca-pill">
+                    <div class="marca-pill-inner">
+                        <div class="marca-logo-placeholder"></div><div class="marca-nome">Lukscolor</div>
+                    </div>
+                </div>
+                <div class="marca-pill">
+                    <div class="marca-pill-inner">
+                        <div class="marca-logo-placeholder"></div><div class="marca-nome">Deca</div>
+                    </div>
+                </div>
+                <div class="marca-pill">
+                    <div class="marca-pill-inner">
+                        <div class="marca-logo-placeholder"></div><div class="marca-nome">Embramaco</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre-nos">
             <h2>Sobre nós</h2>
+
             <p>A Azevedo foi inaugurada em 1994, iniciando suas atividades com a comercialização de materiais básicos para construção. Em 1998, deu início a um importante processo de expansão, incorporando novas linhas de produtos e acompanhando a evolução do mercado. Hoje, a empresa oferece um mix completo de materiais para todas as etapas da obra, com soluções que aliam qualidade, funcionalidade e fino acabamento.
             </p>
 
@@ -74,18 +140,20 @@
             <p>Nossa loja conta com um showroom amplo e moderno, além de uma estrutura de aproximadamente 3.500 m², entre loja e estoque, garantindo variedade, pronta entrega e excelência em cada detalhe. Trabalhamos em parceria com as melhores marcas do mercado, oferecendo confiança e segurança em cada escolha.
             </p>
 
-            <p>Temos imenso orgulho da nossa história e seguimos evoluindo diariamente para transformar projetos em realizações.
-            </p>
+            <p>Temos imenso orgulho da nossa história e seguimos evoluindo diariamente para transformar projetos em realizações.</p>
+
         </section>
 
-        <section class="faixa faixa3 animacao-escondida">
+        <section class="contato">
             <h2>Contato</h2>
+
             <p>Formulário ou informações de contato...</p>
+
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim aut voluptate illum omnis labore dolorem eius facere fugit, culpa maiores excepturi quasi, soluta aliquid consequatur ut eligendi quaerat! Reprehenderit?</p>
         </section>
     </main>
 
-    <footer>
+    <footer class="animacao-escondida">
         <div class="footer-box">
             <div class="localizacao">
             <a href="https://maps.app.goo.gl/KpCe2UEMmZ9WAh7c9" target="_blank">
