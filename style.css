@@ -80,7 +80,7 @@ nav.social img {
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     header { flex-direction: column; 
     align-items: center; 
     } 
@@ -94,32 +94,83 @@ nav.social img {
 }
 
 main {
-  max-width: 1400px; 
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0;
 }
 
+.banner {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.banner-texto{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 48px 40px;
+    background: #fff;
+}
+
+.banner-logo {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.banner-titulo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #111;
+    line-height: 1.3;
+}
+
+.banner-wpp {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #25D366;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 22px;
+    border-radius: 99px;
+    text-decoration: none;
+}
+
+.banner-wpp img {
+    height: 22px;
+    width: 22px;
+}
+
+.banner-wpp:hover {
+    background: #1ebe5d;
+}
 
 .carrossel {
     position: relative;
-    width: 100%;
-    max-width: 480px;
-    margin: 20px auto;
+    flex: 1.5;
     overflow: hidden;
-    height: 100%;
-    max-height: 480px;
+    aspect-ratio: 4 / 3;
+    max-width: 480px;
+    align-self: center;
 }
 
 .slides {
     display: flex;
-    width: 400%;
+    width: 700%;
     height: 100%;
     transition: margin-left 0.5s ease;
 }
 
 .slide {
-    width: 25%;
-    flex: 0 0 25%;
+    width: 14.285%;
+    flex: 0 0 14.285%;
     position: relative;
     height: 100%;
 }
@@ -127,7 +178,7 @@ main {
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     display: block;
 }
 
@@ -137,6 +188,9 @@ input[type="radio"] { display: none; }
 #slide2:checked ~ .slides { margin-left: -100%; }
 #slide3:checked ~ .slides { margin-left: -200%; }
 #slide4:checked ~ .slides { margin-left: -300%; }
+#slide5:checked ~ .slides { margin-left: -400%; }
+#slide6:checked ~ .slides { margin-left: -500%; }
+#slide7:checked ~ .slides { margin-left: -600%; }
 
 section {
   padding: 60px 20px;
@@ -146,6 +200,18 @@ section {
 section.servicos {
   background-color: #038c33;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+  }
+  .carrossel {
+    height: 260px;
+  }
+  .banner-texto {
+    padding: 32px 20px;
+  }
 }
 
 .cards-container {
@@ -222,6 +288,11 @@ section.sobre-nos {
     text-align: justify;
     margin-left: 125px;
     margin-right: 125px;
+}
+
+.sobre-nos img {
+    width: 560px;
+    height: 330px;
 }
 
 section.contato {

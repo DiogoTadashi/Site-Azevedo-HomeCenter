@@ -1,5 +1,5 @@
 let currentSlide = 1;
-const totalSlides = 4;
+const totalSlides = 7;
 const intervalTime = 5000;
 let slideInterval;
 
