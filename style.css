@@ -202,6 +202,10 @@ section.servicos {
   color: white;
 }
 
+.servicos h2{
+    padding-bottom: 20px;
+}
+
 @media (max-width: 768px) {
   .banner {
     flex-direction: column;
@@ -215,8 +219,8 @@ section.servicos {
 }
 
 .cards-container {
-  display: flex;        /* card em linha*/
-  gap: 20px;            /* espaço entre*/
+  display: flex;
+  gap: 20px;
   justify-content: center;
   color: black;
 }
@@ -286,20 +290,83 @@ section.sobre-nos {
     margin-bottom: 16px;
     line-height: 1.7;
     text-align: justify;
-    margin-left: 125px;
-    margin-right: 125px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
+.sobre-nos iframe,
 .sobre-nos img {
-    width: 560px;
-    height: 330px;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin-top: 24px;
+    border-radius: 8px;
 }
 
-section.contato {
-  background-color: #e87814;
-  color: white;
+.faq {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
+.faq-item {
+    display: flex;
+    gap: 70px;
+    align-items: flex-start;
+}
+
+.faq-esquerda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.faq-direita {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    text-align: left;
+}
+
+.faq-mapa {
+    width: 100%;
+    height: 280px;
+    border: 0;
+    border-radius: 8px;
+}
+
+.faq-pergunta h3 {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.faq-pergunta p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.faq-pergunta a {
+    color: #000000;
+    font-weight: 600;
+}
+
+.contato h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+    .faq-item {
+        flex-direction: column;
+    }
+    .faq-mapa {
+        height: 220px;
+    }
+}
 
 footer {
   background-color: #02732a;
