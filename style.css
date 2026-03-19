@@ -16,6 +16,7 @@
 *{
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 header {
@@ -347,13 +348,13 @@ section.sobre-nos {
   border-radius: 8px;
 }
 
-.faq-pergunta h3 {
+.faq-pergunta h3, .faq-esquerda h3 {
   margin-bottom: 8px;
-  font-size: 16px;
+  font-size: 25px;
 }
 
 .faq-pergunta p {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.6;
   color: rgba(0, 0, 0, 0.9);
 }
@@ -363,10 +364,6 @@ section.sobre-nos {
   font-weight: 600;
 }
 
-.contato h3 {
-  font-size: 18px;
-  margin-bottom: 12px;
-}
 
 @media (max-width: 768px) {
   .faq-item {
