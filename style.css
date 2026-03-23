@@ -55,6 +55,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
+@media (max-width: 768px) {
+    body {
+        padding-top: 160px;
+    }
+}
+
 nav.social ul { 
   list-style: none;
   gap:50px;
@@ -164,15 +170,21 @@ main {
 
 .slides {
   display: flex;
-  width: 700%;
+  width: 100%;
   height: 100%;
-  transition: margin-left 0.5s ease;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.slides::-webkit-scrollbar {
+  display: none;
 }
 
 .slide {
-  width: 14.285%;
-  flex: 0 0 14.285%;
-  position: relative;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
   height: 100%;
 }
 
@@ -182,16 +194,6 @@ main {
   object-fit: cover;
   display: block;
 }
-
-input[type="radio"] { display: none; }
-
-#slide1:checked ~ .slides { margin-left: 0%; }
-#slide2:checked ~ .slides { margin-left: -100%; }
-#slide3:checked ~ .slides { margin-left: -200%; }
-#slide4:checked ~ .slides { margin-left: -300%; }
-#slide5:checked ~ .slides { margin-left: -400%; }
-#slide6:checked ~ .slides { margin-left: -500%; }
-#slide7:checked ~ .slides { margin-left: -600%; }
 
 section {
   padding: 60px 20px;
@@ -255,37 +257,78 @@ section.servicos {
 
 section.marcas {
   color: black;
+  padding: 60px 0;
+  text-align: center;
+  overflow: hidden;
 }
 
-.marcas-row {
+section.marcas h2 {
+  margin-bottom: 8px;
+  padding: 0 20px;
+}
+
+section.marcas p {
+  color: #555;
+  margin-bottom: 0;
+  padding: 0 20px;
+}
+
+.marcas-carrossel {
+  overflow: hidden;
+  margin-top: 28px;
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+.marcas-track {
   display: flex;
   gap: 14px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 24px;
+  width: max-content;
+  animation: scroll-marcas 50s linear infinite;
+}
+
+.marcas-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-marcas {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .marca-pill {
   background: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #e0e0e0;
   border-radius: 12px;
-  padding: 12px 20px;
+  padding: 14px 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  min-width: 100px;
+  width: 130px;
+  flex-shrink: 0;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.marca-pill:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+  transform: translateY(-3px);
 }
 
 .marca-pill img {
-  height: 40px;
-  width: auto;
+  height: 48px;
+  width: 90px;
   object-fit: contain;
+  display: block;
 }
 
-.marca-pill span {
-  font-size: 13px;
-  color: #555;
+.marca-nome {
+  font-size: 12px;
+  color: #444;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
 }
 
 section.sobre-nos {
@@ -318,6 +361,10 @@ section.sobre-nos {
 .faq {
   max-width: 900px;
   margin: 0 auto;
+}
+
+.faq h2{
+  padding-bottom: 30px;
 }
 
 .faq-item {
