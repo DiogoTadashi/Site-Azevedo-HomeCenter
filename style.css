@@ -365,6 +365,7 @@ section.sobre-nos {
 
 .faq h2{
   padding-bottom: 30px;
+  color: var(--cor0);
 }
 
 .faq-item {
