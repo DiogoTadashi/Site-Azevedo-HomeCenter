@@ -9,8 +9,13 @@
     <link rel="shortcut icon" href="img/images.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/lxt8izq.css">
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://use.typekit.net/lxt8izq.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/lxt8izq.css">
+    </noscript>
 </head>
 <body>
     <header class="animacao-escondida">
@@ -52,13 +57,13 @@
             </div>
             <div class="carrossel">
                 <div class="slides">
-                    <div class="slide"><img src="img/slide/imgfrente.jpeg" alt="Frente da loja Azevedo"></div>
-                    <div class="slide"><img src="img/slide/showroom1.jpg" alt="Showroom loja Azevedo"></div>
-                    <div class="slide"><img src="img/slide/showroom2.jpg" alt="Showroom loja Azevedo"></div>
-                    <div class="slide"><img src="img/slide/showroom3.jpg" alt="Showroom loja Azevedo"></div>
-                    <div class="slide"><img src="img/slide/showroom4.jpg" alt="Showroom loja Azevedo"></div>
-                    <div class="slide"><img src="img/slide/showroom6.jpg" alt="Showroom loja Azevedo"></div>
-                    <div class="slide"><img src="img/slide/showroom7.jpg" alt="Showroom loja Azevedo"></div>
+                    <div class="slide"><img src="img/slide/imgfrente.webp" alt="Frente da loja Azevedo" fetchpriority="high"></div>
+                    <div class="slide"><img src="img/slide/showroom1.webp" alt="Showroom loja Azevedo"></div>
+                    <div class="slide"><img src="img/slide/showroom2.webp" alt="Showroom loja Azevedo"></div>
+                    <div class="slide"><img src="img/slide/showroom3.webp" alt="Showroom loja Azevedo"></div>
+                    <div class="slide"><img src="img/slide/showroom4.webp" alt="Showroom loja Azevedo"></div>
+                    <div class="slide"><img src="img/slide/showroom6.webp" alt="Showroom loja Azevedo"></div>
+                    <div class="slide"><img src="img/slide/showroom7.webp" alt="Showroom loja Azevedo"></div>
                 </div>
             </div>
         </div>
@@ -70,7 +75,7 @@
 
             <div class="cards-container">
                 <div class="card">
-                    <img src="img/foto-caminhao.jpg" alt="Imagem ilustrando rápidas entregas">
+                    <img src="img/foto-caminhao.webp" alt="Imagem ilustrando rápidas entregas">
                     <h3>Entrega Rápida</h3>
                     <p>Entregamos em toda a cidade no mesmo dia.</p>
                 </div>
@@ -272,9 +277,9 @@
 
             <p>Temos imenso orgulho da nossa história e seguimos evoluindo diariamente para transformar projetos em realizações.</p>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/E8iM6prTPSE?si=Ldy_o_UT-YAjNJ2q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/E8iM6prTPSE?si=Ldy_o_UT-YAjNJ2q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-            <img src="img/familiaz.jpg" alt="Imagem da familia Azevedo">
+            <img src="img/familiaz.webp" alt="Imagem da familia Azevedo">
 
         </section>
 
@@ -286,11 +291,7 @@
                         <h3>Como chegar?</h3>
                         <p>Av. Alfonso Rossafa Molina, 3125 - Centro, Jales - SP, 15700-148</p>
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.934196493491!2d-50.550512023959456!3d-20.261563648720504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94982fd384d1864b%3A0x1c0101b0df9711cc!2sAzevedo%20Materiais%20para%20constru%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1773921963268!5m2!1spt-BR!2sbr" 
-                            class="faq-mapa"
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.934196493491!2d-50.550512023959456!3d-20.261563648720504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94982fd384d1864b%3A0x1c0101b0df9711cc!2sAzevedo%20Materiais%20para%20constru%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1773921963268!5m2!1spt-BR!2sbr" title="Mapa da loja Azevedo Materiais para Construção" class="faq-mapa" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
                     <div class="faq-direita">

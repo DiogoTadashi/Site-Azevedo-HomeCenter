@@ -4,18 +4,10 @@ const totalSlides = document.querySelectorAll('.slide').length;
 let currentSlide = 0;
 let slideInterval;
 
-const dots = document.querySelectorAll('.dot');
-
 function goToSlide(index) {
     const slideWidth = slides.offsetWidth;
     slides.scrollTo({ left: slideWidth * index, behavior: 'smooth' });
     currentSlide = index;
-}
-
-function updateDots() {
-    dots.forEach((dot, i) => {
-        dot.classList.toggle('ativo', i === currentSlide);
-    });
 }
 
 function nextSlide() {

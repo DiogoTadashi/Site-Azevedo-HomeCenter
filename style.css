@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: "cooper-black-std";
+  font-display: swap;
+}
+
 :root{
   --cor0: #038C33;
   --cor1: #02732A;
@@ -141,7 +146,7 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: #25D366;
+  background: #1a9e4a;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -156,7 +161,7 @@ main {
 }
 
 .banner-wpp:hover {
-  background: #1ebe5d;
+  background: #158a3e;
 }
 
 .carrossel {
@@ -332,7 +337,7 @@ section.marcas p {
 }
 
 section.sobre-nos {
-  background-color: #d97218;
+  background-color: #b85e10;
   color: white;
 }
 
@@ -356,6 +361,7 @@ section.sobre-nos {
   aspect-ratio: 16 / 9;
   margin-top: 24px;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .faq {
